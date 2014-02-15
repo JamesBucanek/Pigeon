@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController">
+            <connections>
+                <outlet property="noSignalText" destination="a77-b0-8O5" id="6hI-lm-7Lb"/>
+                <outlet property="noSignalView" destination="1" id="jFI-dw-Qer"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="1" customClass="RoundedRectView">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="154"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Not Available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBb-QD-Jdu">
+                    <rect key="frame" x="23" y="20" width="173" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.093671253639999993" blue="0.26325782380000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location will be saved if it becomes available in the next %@ seconds." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="173" translatesAutoresizingMaskIntoConstraints="NO" id="a77-b0-8O5">
+                    <rect key="frame" x="23" y="49" width="173" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiF-wQ-r9Y">
+                    <rect key="frame" x="86" y="104" width="48" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelNoSignal:" destination="-1" eventType="touchUpInside" id="Ctc-wn-SOS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NBb-QD-Jdu" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" id="27I-2D-Vmp"/>
+                <constraint firstItem="NBb-QD-Jdu" firstAttribute="width" secondItem="a77-b0-8O5" secondAttribute="width" id="6ce-IA-JU4"/>
+                <constraint firstItem="a77-b0-8O5" firstAttribute="top" secondItem="NBb-QD-Jdu" secondAttribute="bottom" constant="8" symbolic="YES" id="9hL-SL-J4Q"/>
+                <constraint firstAttribute="centerX" secondItem="hiF-wQ-r9Y" secondAttribute="centerX" constant="-1" id="U4e-7f-PcG"/>
+                <constraint firstItem="NBb-QD-Jdu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1" secondAttribute="leading" constant="23" id="XCW-qA-HN6"/>
+                <constraint firstAttribute="centerX" secondItem="NBb-QD-Jdu" secondAttribute="centerX" constant="-0.5" id="ckE-4g-WfT"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NBb-QD-Jdu" secondAttribute="trailing" constant="22" id="l2m-He-yP4"/>
+                <constraint firstItem="hiF-wQ-r9Y" firstAttribute="top" secondItem="a77-b0-8O5" secondAttribute="bottom" constant="8" symbolic="YES" id="qyL-LS-0Pz"/>
+                <constraint firstItem="NBb-QD-Jdu" firstAttribute="centerX" secondItem="a77-b0-8O5" secondAttribute="centerX" id="reC-Uu-uKf"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                    <color key="value" white="0.25436245437956206" alpha="1" colorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+</document>

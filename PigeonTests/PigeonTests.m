@@ -3,7 +3,7 @@
 //  PigeonTests
 //
 //  Created by James Bucanek on 11/22/13.
-//  Copyright (c) 2013 Dawn to Dusk Software. All rights reserved.
+//  Copyright (c) 2013 James Bucanek. See LICENSE.txt.
 //
 
 #import <XCTest/XCTest.h>

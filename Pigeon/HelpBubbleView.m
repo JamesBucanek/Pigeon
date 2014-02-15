@@ -3,7 +3,7 @@
 //  Pigeon
 //
 //  Created by James Bucanek on 2/4/14.
-//  Copyright (c) 2014 Dawn to Dusk Software. All rights reserved.
+//  Copyright (c) 2014 James Bucanek. See LICENSE.txt.
 //
 
 #import "HelpBubbleView.h"

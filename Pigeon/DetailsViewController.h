@@ -3,7 +3,7 @@
 //  Pigeon
 //
 //  Created by James Bucanek on 12/15/13.
-//  Copyright (c) 2013 Dawn to Dusk Software. All rights reserved.
+//  Copyright (c) 2013 James Bucanek. See LICENSE.txt.
 //
 
 #import <UIKit/UIKit.h>

@@ -36,14 +36,12 @@
 	ModeChangeController*		mapTrackingModeChangeController;
 	BOOL						autoZoomMode;
 	NSTimer*					autoZoomTimer;
-//	CLLocationDistance			autoZoomLastDistance;
 	NSTimer*					noSignalUpdateTimer;
 	NSDate*						noSignalDeadline;
 	UIBackgroundTaskIdentifier	noSignalTaskIdentifier;
 	HelpBubbleController*		helpBubbleController;
 	NSInteger					helpBubbleIndex;
 }
-//- (void)setActiveLocation:(SavedLocation*)location;
 - (void)showDetailsForLocation:(SavedLocation*)location;
 - (void)setMapType:(MKMapType)type;
 @property (nonatomic) TrackingMode trackingMode;
@@ -59,10 +57,6 @@
 @end
 
 @implementation MapViewController
-
-//- (void)dealloc
-//{
-//}
 
 - (void)viewDidLoad
 {
@@ -239,7 +233,6 @@
 	//	If the condition changes, the timer is canceled.
 	
 	BOOL needsZoom = NO;
-//	BOOL resetDistance = YES;
 	if (autoZoomMode)
 		{
 		// Get the set of annotations are visible on the map, and not too close to the edge
@@ -327,8 +320,6 @@
 		[autoZoomTimer invalidate];
 		autoZoomTimer = nil;
 		}
-//	if (resetDistance)
-//		autoZoomLastDistance = -1.0;
 }
 
 - (void)autoZoomTime:(NSTimer *)timer

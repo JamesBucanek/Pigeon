@@ -767,6 +767,30 @@ United States</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Credits" id="PAL-Jl-rT6">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="0sv-LD-Ndu" style="IBUITableViewCellStyleDefault" id="kRi-vj-OJ0">
+                                        <rect key="frame" x="0.0" y="395" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kRi-vj-OJ0" id="MuR-PK-WkX">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="What it's all about" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0sv-LD-Ndu">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ioA-lH-8e1" kind="push" id="ZYS-AW-Plg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="iAp-lO-a2a" id="1Ru-71-PmC"/>
@@ -846,6 +870,100 @@ To disable automatic refinement, set the time to 0 (none).</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtR-76-Sj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="534" y="953"/>
+        </scene>
+        <!--Credits View Controller - Credits-->
+        <scene sceneID="vKg-7S-RGj">
+            <objects>
+                <viewController id="ioA-lH-8e1" customClass="CreditsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="298-xe-F11"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwL-2e-zIF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d6c-yD-3Uh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written by James Bucanek" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBU-8g-0fV">
+                                <rect key="frame" x="57" y="72" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ejg-vH-8qd">
+                                <rect key="frame" x="20" y="101" width="280" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="j73-WG-KGE"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pigeon was inspired by a similarly named app that I developed for chapter 17 of  my book, ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Learn iOS 7 App Development">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Italic"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">.
+
+I thought "here's an app I'd like to use," so I wrote it.
+
+If you're interested in iOS development, the book is available from Apress. The complete source code for this app is publicly available on GitHub.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-0X-KTq">
+                                <rect key="frame" x="56" y="309" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Learn iOS 7 App Development">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkToBook:" destination="ioA-lH-8e1" eventType="touchUpInside" id="8nr-15-f6i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6o-bG-AlU">
+                                <rect key="frame" x="58" y="347" width="205" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="The Pigeon Project on GitHub">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkToGitHub:" destination="ioA-lH-8e1" eventType="touchUpInside" id="9ah-hB-YhH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ejg-vH-8qd" secondAttribute="trailing" constant="20" symbolic="YES" id="2du-nH-Ik5"/>
+                            <constraint firstAttribute="centerX" secondItem="b6o-bG-AlU" secondAttribute="centerX" id="4Mo-fM-HR6"/>
+                            <constraint firstItem="ejg-vH-8qd" firstAttribute="top" secondItem="OBU-8g-0fV" secondAttribute="bottom" constant="8" symbolic="YES" id="BaG-oB-6z6"/>
+                            <constraint firstItem="fx4-0X-KTq" firstAttribute="top" secondItem="ejg-vH-8qd" secondAttribute="bottom" constant="8" symbolic="YES" id="EaB-EP-bvC"/>
+                            <constraint firstItem="OBU-8g-0fV" firstAttribute="top" secondItem="298-xe-F11" secondAttribute="bottom" constant="20" symbolic="YES" id="R3S-mt-RFU"/>
+                            <constraint firstItem="b6o-bG-AlU" firstAttribute="top" secondItem="fx4-0X-KTq" secondAttribute="bottom" constant="8" symbolic="YES" id="RFf-vy-aiM"/>
+                            <constraint firstItem="ejg-vH-8qd" firstAttribute="leading" secondItem="d6c-yD-3Uh" secondAttribute="leading" constant="20" symbolic="YES" id="Tj2-jL-IbO"/>
+                            <constraint firstAttribute="centerX" secondItem="fx4-0X-KTq" secondAttribute="centerX" id="af7-ff-Uhi"/>
+                            <constraint firstAttribute="centerX" secondItem="OBU-8g-0fV" secondAttribute="centerX" id="oRt-t7-j28"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Credits" id="yuI-dk-FA9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSQ-wk-O3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931" y="1049"/>
         </scene>
     </scenes>
     <resources>

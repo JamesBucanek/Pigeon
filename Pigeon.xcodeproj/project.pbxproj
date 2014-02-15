@@ -31,6 +31,7 @@
 		1A56391E1867D4A000D7CA8E /* Refiner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A56391D1867D4A000D7CA8E /* Refiner.m */; };
 		1A606B231879E0A300C4E619 /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A606B221879E0A300C4E619 /* DocumentController.m */; };
 		1A606B26187A1BC600C4E619 /* LocationData+Documents.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A606B25187A1BC600C4E619 /* LocationData+Documents.m */; };
+		1A65A8FB18AF312D00A42C5F /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A65A8FA18AF312D00A42C5F /* CreditsViewController.m */; };
 		1A87E47418A3074E00AEFE6E /* Help_4_Type.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A87E47318A3074E00AEFE6E /* Help_4_Type.xib */; };
 		1A9F9507185CBE8D004FBDE1 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F9506185CBE8D004FBDE1 /* SettingsViewController.m */; };
 		1AB5545718688DC300D44EFD /* NoSignalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB5545618688DC300D44EFD /* NoSignalView.xib */; };
@@ -115,6 +116,8 @@
 		1A606B221879E0A300C4E619 /* DocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
 		1A606B24187A1BC600C4E619 /* LocationData+Documents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LocationData+Documents.h"; sourceTree = "<group>"; };
 		1A606B25187A1BC600C4E619 /* LocationData+Documents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LocationData+Documents.m"; sourceTree = "<group>"; };
+		1A65A8F918AF312D00A42C5F /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		1A65A8FA18AF312D00A42C5F /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
 		1A87E47318A3074E00AEFE6E /* Help_4_Type.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Help_4_Type.xib; sourceTree = "<group>"; };
 		1A9F9505185CBE8D004FBDE1 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		1A9F9506185CBE8D004FBDE1 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
@@ -309,6 +312,8 @@
 				1A9F9506185CBE8D004FBDE1 /* SettingsViewController.m */,
 				1A0F17B7187CCA4000CC6C34 /* RefinementViewController.h */,
 				1A0F17B8187CCA4000CC6C34 /* RefinementViewController.m */,
+				1A65A8F918AF312D00A42C5F /* CreditsViewController.h */,
+				1A65A8FA18AF312D00A42C5F /* CreditsViewController.m */,
 				1AA9B344189B5FA00010B767 /* Map Overlays */,
 				1AA9B347189B603D0010B767 /* Map Utilities */,
 				1AE6075A18AEAB8D00E4583F /* Help Bubbles */,
@@ -513,6 +518,7 @@
 				1ABEC854183FDBAA006131F8 /* AppDelegate.m in Sources */,
 				1A5058E6186A1D7600450412 /* ShowReturnController.m in Sources */,
 				1ADEBFA4185E6A8B0028E919 /* MKMapView+MapPanning.m in Sources */,
+				1A65A8FB18AF312D00A42C5F /* CreditsViewController.m in Sources */,
 				1ABEC850183FDBAA006131F8 /* main.m in Sources */,
 				1AFED2DC186FABD10053B431 /* LocationDocument.m in Sources */,
 				1A56391E1867D4A000D7CA8E /* Refiner.m in Sources */,

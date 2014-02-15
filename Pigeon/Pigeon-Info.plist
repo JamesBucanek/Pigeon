@@ -13,32 +13,14 @@
 			<array/>
 			<key>CFBundleTypeName</key>
 			<string>Saved Location</string>
-			<key>LSTypeIsPackage</key>
-			<true/>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>com.dawntodusksoftware.nav.location</string>
 			</array>
-		</dict>
-	</array>
-	<key>UTExportedTypeDeclarations</key>
-	<array>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>com.apple.package</string>
-			</array>
-			<key>UTTypeIdentifier</key>
-			<string>com.dawntodusksoftware.nav.location</string>
-			<key>UTTypeDescription</key>
-			<string>Location</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.filename-extension</key>
-				<string>savedloc</string>
-			</dict>
+			<key>LSTypeIsPackage</key>
+			<true/>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
@@ -63,11 +45,30 @@
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
+		<string>gps</string>
 		<string>armv7</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Location</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.dawntodusksoftware.nav.location</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<string>savedloc</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>

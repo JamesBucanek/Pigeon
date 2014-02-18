@@ -840,7 +840,7 @@ United States</string>
                                 <rect key="frame" x="20" y="271" width="280" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Immediately after saving a new location, Pigeon continues to refine the location—even after you close the app or lock your screen—if more accurate GPS information becomes available.
+                                <string key="text">Immediately after saving a new location, Homer continues to refine your location—even after you close the app or lock your screen—if more accurate GPS information becomes available.
 
 To disable automatic refinement, set the time to 0 (none).</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -898,7 +898,7 @@ To disable automatic refinement, set the time to 0 (none).</string>
                                     <constraint firstAttribute="height" constant="200" id="j73-WG-KGE"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Pigeon was inspired by a similarly named app that I developed for chapter 17 of  my book, ">
+                                    <fragment content="Home was inspired by the &quot;Pigeon&quot; app I developed for chapter 17 of  my book, ">
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>

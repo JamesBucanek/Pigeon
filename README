@@ -2,11 +2,11 @@ Homer the Pigeon
 
 ========================================
 
-Homer the Pigeon is an iOS app for Apple's iPhone series of device.
+Homer the Pigeon is an iOS app for Apple's iPhone series of devices.
 
-It's purpose is simple: It remembers where you were and helps you get back there again.
+It's purpose is simple: it remembers where you were and helps you get back there again.
 So when you park, step out of the subway, or before you leave your hotel lobby,
-open Pigeon, tap the (+) button, and you'll never have to worry about how to
+open Homer, tap the (+) button, and you'll never have to worry about how to
 get back.
 
 While writing the "Pigeon" app in chapter 17 of "Learn iOS 7 App Development"
@@ -14,7 +14,7 @@ While writing the "Pigeon" app in chapter 17 of "Learn iOS 7 App Development"
 to create a commercial quality version of the same app.
 
 I also decided to make the source for the entire app freely available, both
-as an bonus for those who've worked through the book, and as an aid in helping
+as a bonus for those who've worked through the book, and as an aid in helping
 budding iOS app developers get started.
 
 Homer the Pigeon also incorporates lessons from chapters 7, 11, 12, 18, 19, and 24.

@@ -325,21 +325,23 @@
 	CLPlacemark* placemark = _location.placemark;
 	if (placemark!=nil)
 		{
-		// User has not supplied a title; fill in with placemark information
+		// User has not supplied a title, but there's placemark info; fill in with placemark information
 		NSString* name = placemark.name;
 		NSString* address = ABCreateStringWithAddressDictionary(placemark.addressDictionary,NO);
 		if (address==nil)
 			address = @"";
 		if (name.length==0 || [address hasPrefix:name])
-			// no name or address begins with name: use address
+			// no name or the address begins with name: use address
 			_titleField.text = address;
 		else
 			// combine name and address
 			_titleField.text = [NSString stringWithFormat:@"%@\r%@",name,address];
+		// Make the text grey, indicating that's it a placeholder
 		_titleField.textColor = [UIColor darkGrayColor];
 		return;
 		}
 
+	// No user name and no placeholder information available: fill with a default placeholder message
 	if (_location.geocodingFinished)
 		{
 		_titleField.text = @"Unknown Location";
@@ -504,11 +506,12 @@
 			// In the later, clear the field.
 			// In both cases, reset the font and color to the ones used for the user's name
 			textView.textColor = [UIColor darkTextColor];
-			if (!_location.geocodingFinished)
-				textView.text = @"";
-			else
-				//textView = NSMakeRange(0,_titleField.text.length);
+			if (_location.geocodingFinished)
+				// Select all of the text in the field, so the user can easily type over it (or not)
 				[textView selectAll:self];
+			else
+				// Geocoding hasn't finished, so there's no default information
+				textView.text = @"";
 			}
 		}
 	if (textView==_notesField)

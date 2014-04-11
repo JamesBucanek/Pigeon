@@ -80,6 +80,7 @@
 		_placemark =	[decoder decodeObjectOfClass:[CLPlacemark class]	forKey:@"placemark"];
 		_notes =		[decoder decodeObjectOfClass:[NSString class]		forKey:@"notes"];
 		identifier =	[decoder decodeObjectOfClass:[NSString class]		forKey:@"id"];
+		_geocodingFinished = YES;		// assume geocoding has finished
 		}
 	return self;
 }
